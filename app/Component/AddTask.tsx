@@ -14,7 +14,7 @@ const AddTask = () => {
     e.preventDefault();
     handleAddTodo(todo);
     setTodo("");
-    console.log("Add button clicked");
+    console.log("Olla , Tanvir Komon tala vue");
   };
 
   return (
