@@ -21,11 +21,10 @@ const AddTask = () => {
     <div>
       <h1 className="py-2 my-3 border-b-4">Add Item</h1>
       <form onSubmit={handleSubmit}>
-        <input
+        <textarea
           className="input input-bordered w-96 m-3"
-          type="text"
           value={todo}
-          onChange={handleInputChange}
+          // onChange={handleInputChange}
         />
         <button type="submit" className="bg-blue-500 font-bold p-3 rounded-md">
           Add
