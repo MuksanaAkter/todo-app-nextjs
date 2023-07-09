@@ -36,6 +36,7 @@ export const TodosProvider = ({ children }: { children: ReactNode }) => {
     }
   });
 
+//  add a task 
 
   const handleAddTodo = (task: string) => {
     setTodos((prev) => [
@@ -49,6 +50,7 @@ export const TodosProvider = ({ children }: { children: ReactNode }) => {
      
     ]);
   };
+
 //  if task completed
 
 const todoCompleted = (id:string) => {
@@ -65,8 +67,8 @@ const todoCompleted = (id:string) => {
   })
 }
 
-
 // task delete
+
 const todoDelete= (id:string) => {
   setTodos((prev) => {
  const newtodos = prev.filter((task) => task.id !== id )
